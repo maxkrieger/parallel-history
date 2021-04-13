@@ -10,6 +10,8 @@ It's an interface experiment where parallel views enable fluid scrolling of a fi
 
 ## Installation
 
+Download `web-ext-artifacts/parallel-history-0.0.1.zip`, unzip it. Load an unpacked extension in Firefox/Chrome (developer mode may be required).
+
 ## Development
 
 Requires node, yarn, and Firefox.

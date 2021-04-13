@@ -16,6 +16,8 @@ Download `web-ext-artifacts/parallel-history-0.0.1.zip`, unzip it. Load an unpac
 
 Requires node, yarn, and Firefox.
 
+Uses React.js, Typescript, web-ext, and Estrella (based on ESBuild).
+
 ### Setup
 
 ```
@@ -27,6 +29,8 @@ yarn
 ```
 yarn start
 ```
+
+Firefox should auto-launch in a special live-reloading dev mode.
 
 ### Building (for production)
 

@@ -34,6 +34,8 @@ yarn start
 yarn run build
 ```
 
+The built extension will be in the `web-ext-artifacts` folder.
+
 ## Further Work
 
 - [ ] Infinite scroll (window'll fill up fast)

@@ -14,11 +14,12 @@ const initDB = () => {
 };
 
 // Enrich entry with up to date title
-browser.history.onTitleChanged.addListener(async ({ url, title }) => {
-  db.transaction("rw", db.table("history"), async () => {
-    await db.table("history").where({ url }).modify({ title });
+browser.history.onTitleChanged &&
+  browser.history.onTitleChanged.addListener(async ({ url, title }) => {
+    db.transaction("rw", db.table("history"), async () => {
+      await db.table("history").where({ url }).modify({ title });
+    });
   });
-});
 
 browser.history.onVisited.addListener(async (item) => {
   const visits = await browser.history.getVisits({ url: item.url! });

@@ -6,7 +6,6 @@
   "permissions": [
     "storage",
     "unlimitedStorage",
-    "menus",
     "tabs",
     "<all_urls>",
     "history"

@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node build.js --watch",
-    "build": "node build.js && web-ext build",
+    "build": "node build.js && web-ext build --overwrite-dest",
     "validate": "web-ext lint"
   },
   "devDependencies": {

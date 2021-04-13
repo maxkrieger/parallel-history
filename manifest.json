@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/PrsPrsBK/ffext-manifest-schema/master/ffext.json",
+  "manifest_version": 2,
+  "name": "parallel-history",
+  "version": "0.0.1",
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "menus",
+    "tabs",
+    "<all_urls>",
+    "history"
+  ],
+  "background": {
+    "scripts": ["background_script.js"]
+  },
+  "browser_action": {
+    "default_title": "parallel history",
+    "default_popup": "popup.html",
+    "browser_style": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "parallelhistory_dummy@a9.io",
+      "strict_min_version": "42.0"
+    }
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}

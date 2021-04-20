@@ -45,4 +45,4 @@ The built extension will be in the `web-ext-artifacts` folder.
 - [ ] Infinite scroll (window'll fill up fast)
 - [ ] Animations during reordering
 - [ ] Self-similarity proximity (if two right column entries are related, make them proximate)
-- [ ] URL Canonicalization
+- [x] URL Canonicalization

@@ -13,7 +13,6 @@ export interface Entry {
   id: number;
   title: string;
   url: string;
-  canonicalizedUrl: string;
   referrerUrl: string;
   visitId: string;
   time: number;

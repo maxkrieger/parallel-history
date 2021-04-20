@@ -30,18 +30,17 @@ browser.history.onVisited.addListener(async (item) => {
       .where({ visitId: visit.referringVisitId })
       .first()) || { url: "" };
     const entry = {
-      url: item.url!,
+      url: normalizeUrl(item.url!, {
+        stripHash: true,
+        stripTextFragment: true,
+        stripWWW: true,
+      }),
       title: item.title ?? "",
       visitId: visit.visitId,
       time: visit.visitTime!,
       referringVisitId: visit.referringVisitId,
       referrerUrl: predecessor.url,
       transition: visit.transition,
-      canonicalizedUrl: normalizeUrl(item.url!, {
-        stripHash: true,
-        stripTextFragment: true,
-        stripWWW: true,
-      }),
     };
     await db.table("history").add(entry);
   });
